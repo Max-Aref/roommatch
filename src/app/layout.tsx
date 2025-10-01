@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Nunito, Outfit } from "next/font/google";
-import Navigation from "@/components/Navigation";
 import "./globals.css";
 
 const inter = Inter({
@@ -38,7 +37,6 @@ export default function RootLayout({
       className={`${inter.variable} ${nunito.variable} ${outfit.variable}`}
     >
       <body className='font-sans antialiased bg-background text-neutral-900'>
-        <Navigation />
         <main>{children}</main>
       </body>
     </html>

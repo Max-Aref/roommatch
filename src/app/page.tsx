@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
 import Hero3 from "@/components/sections/Hero3";
+import NavigationModern from "@/components/sections/NavigationModern";
 import HowItWorks from "@/components/HowItWorksSimple";
 import FeatureShowcase from "@/components/FeatureShowcase";
 import StatsBanner from "@/components/StatsBanner";
@@ -14,6 +15,9 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      {/* Modern Navigation with Hero3 Design DNA */}
+      <NavigationModern />
+
       {/* Skip to content link for accessibility */}
       <a href='#main-content' className='skip-to-content'>
         Skip to main content

@@ -94,6 +94,8 @@ const config: Config = {
         "dot-travel": "dotTravel 3s linear infinite",
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         gradient: "gradient 8s linear infinite",
+        "spin-slow": "spin 3s linear infinite",
+        "slide-in-right": "slideInRight 0.5s ease-out forwards",
       },
       keyframes: {
         float: {
@@ -130,6 +132,16 @@ const config: Config = {
           "50%": {
             "background-size": "200% 200%",
             "background-position": "right center",
+          },
+        },
+        slideInRight: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(20px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
           },
         },
       },

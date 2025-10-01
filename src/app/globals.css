@@ -100,23 +100,26 @@ select {
   animation: shimmer 2s infinite;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Dark Theme */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #111827;
+  border-left: 1px solid rgba(139, 92, 246, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
+  background: linear-gradient(to bottom, #8b5cf6, #ec4899);
+  border-radius: 6px;
+  border: 2px solid #111827;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: linear-gradient(to bottom, #a78bfa, #f472b6);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
 }
 
 /* Page transition animation */
@@ -135,13 +138,15 @@ select {
   animation: fadeIn 0.6s ease-out;
 }
 
-/* Selection color */
+/* Selection color - Dark Theme with Hero3 gradient */
 ::selection {
-  background-color: #2563eb;
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
   color: white;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
 }
 
 ::-moz-selection {
-  background-color: #2563eb;
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
   color: white;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
 }

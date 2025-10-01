@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Nunito, Outfit } from "next/font/google";
-import Navigation from "@/components/Navigation";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,7 +23,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "RoomMatch - Find Your Perfect Roommate",
   description:
-    "Connect with compatible roommates and find your ideal living space.",
+    "Connect with compatible roommates and find your ideal living space with AI-powered matching, virtual tours, and verified safety features.",
 };
 
 export default function RootLayout({
@@ -37,9 +36,8 @@ export default function RootLayout({
       lang='en'
       className={`${inter.variable} ${nunito.variable} ${outfit.variable}`}
     >
-      <body className='font-sans antialiased bg-background text-neutral-900'>
-        <Navigation />
-        <main>{children}</main>
+      <body className='font-sans antialiased bg-gray-900 text-white'>
+        {children}
       </body>
     </html>
   );

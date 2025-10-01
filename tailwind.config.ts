@@ -93,6 +93,7 @@ const config: Config = {
         "fade-in": "fadeIn 0.6s ease-out forwards",
         "dot-travel": "dotTravel 3s linear infinite",
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        gradient: "gradient 8s linear infinite",
       },
       keyframes: {
         float: {
@@ -119,6 +120,16 @@ const config: Config = {
           "100%": {
             opacity: "0",
             transform: "translateX(100%) translateY(-50%)",
+          },
+        },
+        gradient: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
           },
         },
       },

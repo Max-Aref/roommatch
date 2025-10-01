@@ -8,6 +8,7 @@ import PricingModern from "@/components/sections/PricingModern";
 import SafetyModern from "@/components/sections/SafetyModern";
 import CTAModern from "@/components/sections/CTAModern";
 import FAQModern from "@/components/sections/FAQModern";
+import SectionTransition from "@/components/sections/SectionTransition";
 import FooterModern from "@/components/sections/FooterModern";
 
 export default function Home() {
@@ -60,7 +61,8 @@ export default function Home() {
         {/* Modern FAQ Section */}
         <FAQModern />
 
-        <div className='h-20 md:h-32' aria-hidden='true'></div>
+        {/* Gradient Transition between FAQ and CTA */}
+        <SectionTransition />
 
         {/* Modern CTA Section */}
         <CTAModern />

@@ -93,6 +93,9 @@ const config: Config = {
         "fade-in": "fadeIn 0.6s ease-out forwards",
         "dot-travel": "dotTravel 3s linear infinite",
         "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "gradient": "gradient 8s linear infinite",
+        "typing": "typing 3.5s steps(60, end), blink 0.75s step-end infinite",
+        "bounce-slow": "bounce 3s infinite",
       },
       keyframes: {
         float: {
@@ -120,6 +123,18 @@ const config: Config = {
             opacity: "0",
             transform: "translateX(100%) translateY(-50%)",
           },
+        },
+        gradient: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        typing: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
+        blink: {
+          "0%, 100%": { borderColor: "transparent" },
+          "50%": { borderColor: "currentColor" },
         },
       },
     },
